@@ -19,7 +19,7 @@ To use this program on your computer, follow these steps:
 
 4 - Run the schema.sql and seed.sql files to create and seed the database in your local database software.
 
-3 - In VS Code, right-click on the diretory where the index.js file is located and select "Open in Integrated Terminal".
+3 - In VS Code, right-click on the directory where the index.js file is located and select "Open in Integrated Terminal".
 
 4 - On the command line, type "npm i" and then hit Enter. The requisite node modules will be installed.
 
