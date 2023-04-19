@@ -136,8 +136,8 @@ function runInquirer () {
                   else {console.log('Employee Added!')};
                 runInquirer();
                 })
-            })
-          });
+              })
+            });
           })
         }
       else if
@@ -153,8 +153,8 @@ function runInquirer () {
                 }
                 else {console.log('Role Added!')};
               runInquirer();
-            })
-          });
+              })
+            });
           })
         }
       else if
@@ -177,14 +177,14 @@ function runInquirer () {
             db.promise().query('SELECT id FROM role WHERE title = ?', answers.emprole, function (err, results) {
             }).then( ([rows,fields]) => {
               roleId = rows[0].id;
-            db.query('UPDATE employee SET role_id = ? WHERE first_name = ? AND last_name = ?', [roleId, answers.empfirst, answers.emplast], function (err, results) {
+              db.query('UPDATE employee SET role_id = ? WHERE first_name = ? AND last_name = ?', [roleId, answers.empfirst, answers.emplast], function (err, results) {
               if (err) {
                 console.log('Please ensure you have entered valid information and try again')
               }
               else {console.log('Employee Role Updated!')};
               runInquirer();
-            })
-          });
+              })
+            });
           })
         }
         else if
